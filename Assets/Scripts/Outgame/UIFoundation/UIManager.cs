@@ -80,6 +80,7 @@ public class UIManager
         else
         {
             sceneOrigin = Addressables.LoadAssetAsync<GameObject>(string.Format("Assets/Scenes/Game/UI/{0}.prefab", next.ToString())).WaitForCompletion();
+            _sceneCache.Add(next , sceneOrigin);
         }
 
         if (sceneOrigin == default)
