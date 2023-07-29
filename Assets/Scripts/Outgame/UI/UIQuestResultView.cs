@@ -37,7 +37,7 @@ namespace Outgame
             case RewardItemType.Item: ret = string.Format("{0}{1}つ", MasterData.GetLocalizedText(MasterData.GetItem(int.Parse(reward.param[0])).Name), int.Parse(reward.param[1])); break;
 
             //TODO: イベントポイント
-            //case RewardItemType.EventPoint: ret = string.Format("{0}ポイント", int.Parse(reward.param[0])); break;
+            case RewardItemType.EventPoint: ret = string.Format("{0}ポイント", 5); break;
             }
             return ret;
         }
