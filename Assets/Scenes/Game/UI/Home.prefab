@@ -415,7 +415,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6234278708388462897}
   - component: {fileID: 4031807802120555484}
-  - component: {fileID: 5374111005199522437}
+  - component: {fileID: -5704598531584239928}
   m_Layer: 5
   m_Name: Home
   m_TagString: Untagged
@@ -461,7 +461,7 @@ CanvasGroup:
   m_Interactable: 1
   m_BlocksRaycasts: 1
   m_IgnoreParentGroups: 0
---- !u!114 &5374111005199522437
+--- !u!114 &-5704598531584239928
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -474,6 +474,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _isActive: 1
+  _eventButton: {fileID: 5086982941296426500}
 --- !u!1 &2702447535103527814
 GameObject:
   m_ObjectHideFlags: 0
@@ -597,7 +598,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 5374111005199522437}
+      - m_Target: {fileID: -5704598531584239928}
         m_TargetAssemblyTypeName: Outgame.UIHomeView, Assembly-CSharp
         m_MethodName: GoGacha
         m_Mode: 1
@@ -1016,7 +1017,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 5374111005199522437}
+      - m_Target: {fileID: -5704598531584239928}
         m_TargetAssemblyTypeName: Outgame.UIHomeView, Assembly-CSharp
         m_MethodName: GoEvent
         m_Mode: 1
@@ -1165,7 +1166,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 5374111005199522437}
+      - m_Target: {fileID: -5704598531584239928}
         m_TargetAssemblyTypeName: Outgame.UIHomeView, Assembly-CSharp
         m_MethodName: GoCardList
         m_Mode: 1
@@ -1314,7 +1315,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 5374111005199522437}
+      - m_Target: {fileID: -5704598531584239928}
         m_TargetAssemblyTypeName: Outgame.UIHomeView, Assembly-CSharp
         m_MethodName: GoEnhance
         m_Mode: 1
@@ -1598,7 +1599,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 5374111005199522437}
+      - m_Target: {fileID: -5704598531584239928}
         m_TargetAssemblyTypeName: Outgame.UIHomeView, Assembly-CSharp
         m_MethodName: GoQuest
         m_Mode: 1

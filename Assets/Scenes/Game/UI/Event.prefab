@@ -337,6 +337,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _isActive: 0
+  _eventQuestButton: {fileID: 7997633931009822854}
 --- !u!1 &2702447535103527814
 GameObject:
   m_ObjectHideFlags: 0

@@ -6,10 +6,18 @@ namespace Outgame
 {
     public class UIEventView : UIStackableView
     {
+        [SerializeField, Header("イベントクエストのボタンを表示するか管理する")]
+        GameObject _eventQuestButton;
+
         protected override void AwakeCall()
         {
             ViewId = ViewID.Event;
             _hasPopUI = true;
+        }
+
+        private void EventOpenCheck() 
+        {
+            _eventQuestButton.SetActive(EventHelper.IsEventGamePlayable(1));
         }
 
         public override void Enter()
@@ -21,6 +29,8 @@ namespace Outgame
             Debug.Log(EventHelper.GetAllOpenedEvent());
             Debug.Log(EventHelper.IsEventOpen(1));
             Debug.Log(EventHelper.IsEventGamePlayable(1));
+
+            EventOpenCheck();
         }
 
         public void GoHome() 

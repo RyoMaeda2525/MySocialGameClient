@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using UnityEditor.PackageManager;
 using UnityEngine;
 
 
@@ -10,10 +11,18 @@ namespace Outgame
 {
     public class UIHomeView : UIStackableView
     {
+        [SerializeField, Header("イベントのボタンを表示するか管理する")]
+        GameObject _eventButton;
+
         protected override void AwakeCall()
         {
             ViewId = ViewID.Home;
             _hasPopUI = true;
+        }
+
+        private void EventCheck() 
+        {
+            _eventButton.SetActive(EventHelper.IsEventOpen(1));
         }
 
         public override void Enter()
@@ -25,6 +34,8 @@ namespace Outgame
             Debug.Log(EventHelper.GetAllOpenedEvent());
             Debug.Log(EventHelper.IsEventOpen(1));
             Debug.Log(EventHelper.IsEventGamePlayable(1));
+
+            EventCheck();
         }
 
         public void GoGacha()
